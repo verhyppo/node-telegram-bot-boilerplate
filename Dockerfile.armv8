@@ -1,6 +1,6 @@
 FROM arm64v8/node:14-alpine AS builder
 
-WORKDIR /app
+ARG TOKEN=token
 
 COPY . /app
 
